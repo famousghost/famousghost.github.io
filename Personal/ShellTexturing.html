@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shell Texturing | Marcin Czekaj</title>
+    <link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="project-header">
+    <h1>Shell Texturing </h1>
+    <p class="project-subtitle">
+		Real-time fur rendering using the Shell Texturing technique, implemented in Unity
+    </p>
+    <a class="back-link" href="../index.html">Back to Portfolio</a>
+</header>
+
+<main class="project-container">
+
+<!-- ================= OVERVIEW ================= -->
+<section>
+    <h2>Overview</h2>
+    <p>
+
+    </p>
+	
+	<div class="project-links">
+
+		<!-- GitHub Repository -->
+		<a href="https://github.com/famousghost/ShellTexturingUnity"
+		   target="_blank"
+		   class="project-button">
+			<i class="fab fa-github"></i>
+			Github
+		</a>
+	</div>
+
+
+    <div class="project-meta">
+        <div><strong>Type:</strong> Personal </div>
+        <div><strong>Technologies:</strong> C#, Unity built-in, Shaders</div>
+    </div>
+</section>
+
+<section>
+	<h2>Overview</h2>
+	<p>
+		Real-time fur rendering using the Shell Texturing technique, implemented in Unity.
+		This method approximates volumetric fur by layering multiple offset mesh shells.
+	</p>
+
+	<h2>Technical Description</h2>
+	<p>
+		The effect is achieved by rendering multiple copies of the same mesh,
+		each slightly offset along vertex normals. Each layer ("shell") samples
+		a density texture to simulate fur strands and depth.
+	</p>
+
+	<p>
+		The technique is widely used in real-time applications to approximate
+		fur, grass, or soft volumetric surfaces without requiring true volumetric simulation.
+	</p>
+
+	<h2>Implementation Details</h2>
+	<ul>
+		<li>Multiple shell layers generated via vertex normal extrusion.</li>
+		<li>Alpha-based density control to simulate fur thickness and falloff.</li>
+		<li>GPU Instancing used to reduce draw calls and improve rendering performance.</li>
+		<li>Custom shader controlling strand fading, lighting response, and shell depth blending.</li>
+	</ul>
+
+	<h2>Optimization Strategy</h2>
+	<p>
+		GPU Instancing allows identical meshes using the same material to be
+		submitted in a single draw call, significantly reducing CPU overhead.
+		This is particularly important when rendering many shell layers per object.
+	</p>
+<section>
+    <h2>Video</h2>
+	<div class="video-container">
+	
+	<video controls width="100%">
+        <source src="../Assets/Personal/Videos/ShellTexturing/ShellTexturingMovement.mp4" type="video/mp4">
+        Sphere Fur
+    </video>
+	
+	<video controls width="100%">
+        <source src="../Assets/Personal/Videos/ShellTexturing/ShellTexturingLight.mp4" type="video/mp4">
+        Sphere Fur Light
+    </video>
+	
+	</div>
+
+</section>
+
+<section>
+    <h2>Screenshots</h2>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="../Assets/Personal/Images/ShellTexturing/sc0.jpg" alt="Screenshot 1">
+        </div>
+    </div>
+	
+	<div class="gallery">
+        <div class="gallery-item">
+            <img src="../Assets/Personal/Images/ShellTexturing/sc1.jpg" alt="Screenshot 2">
+        </div>
+    </div>
+	
+	<div class="gallery">
+        <div class="gallery-item">
+            <img src="../Assets/Personal/Images/ShellTexturing/sc2.jpg" alt="Screenshot 3">
+        </div>
+    </div>
+	
+</section>
+
+</main>
+
+<footer>
+    © 2026 Marcin Czekaj
+</footer>
+
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="fullImage">
+</div>
+<script src="../script.js"></script>
+
+
+</body>
+</html>
