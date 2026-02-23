@@ -10,7 +10,7 @@
 <header class="project-header">
     <h1>Friescape</h1>
     <p class="project-subtitle">
-        Short one-line description (e.g. DirectX 12 Toy Renderer with Deferred Shading)
+        A stylized project combining post-processing techniques with ray-marched effects
     </p>
     <a class="back-link" href="../index.html">Back to Portfolio</a>
 </header>
@@ -35,6 +35,30 @@
 </section>
 
 <section>
+
+	<h2>Responsibilities</h2>
+	<ul>
+		<li>Developed a custom post-processing effect combining dithering with G-Buffer normal and depth-based outline rendering.</li>
+		<li>Implemented a ray-marched “ketchup” effect simulating dynamic interaction with fries.</li>
+		<li>Contributed to core gameplay mechanics and interaction systems.</li>
+	</ul>
+
+	<h2>Technical Implementation</h2>
+	<ul>
+		<li>Screen-space outline shader using depth and normal buffers.</li>
+		<li>Ray marching implementation optimized for real-time performance.</li>
+		<li>Careful control of step count and distance field evaluation to balance quality and performance.</li>
+	</ul>
+
+	<h2>What I Learned</h2>
+	<p>
+		Improved understanding of screen-space edge detection techniques and optimization
+		strategies for ray marching to reduce performance cost while maintaining visual quality.
+	</p>
+	
+</section>
+
+<section>
     <h2>Screenshots</h2>
 
     <div class="gallery">
@@ -51,31 +75,6 @@
             <img src="../Assets/GameJam/Images/Friescape/sc3.jpg" alt="Screenshot 4">
         </div>
     </div>
-</section>
-
-<section>
-    <h2>Responsibilities</h2>
-
-	<p>
-	Developed a post-processing
-	effects using dithering combined
-	with G-Buffer normal and depth
-	textures outline effect.
-	Implemented ray-marched
-	ketchup to achieve a visual effect
-	where fries appear to eat the
-	ketchup.
-	Worked on core gameplay
-	mechanics.
-	</p>
-</section>
-
-<section>
-    <h2>What I Learned</h2>
-    <p>
-        How to write outline shader properly and how to optimize raymarching algorithm
-		to be not that performant heavy.
-    </p>
 </section>
 
 </main>

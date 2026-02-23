@@ -10,9 +10,9 @@
 <header class="project-header">
     <h1>FFT Water Simulation</h1>
     <p class="project-subtitle">
-       Realistic looking water simulation
+       Real-time GPU-based ocean simulation
     </p>
-    <a class="back-link" href="../index.html">← Back to Portfolio</a>
+    <a class="back-link" href="../index.html">Back to Portfolio</a>
 </header>
 
 <main class="project-container">
@@ -34,21 +34,35 @@
 
 <!-- ================= TECHNICAL DETAILS ================= -->
 <section>
-    <h2>Technical Implementation</h2>
-	HDWS (High definition water system):
-	Design and implement a GPU-driven
-	ocean simulation based on the FFT
-	Tessendorf spectrum.
-	Develop custom HDRP-compatible
-	shader passes for wave displacement,
-	foam, shoreline blending, and flow
-	maps.
-	Utilize compute shaders for spectral
-	wave generation and simulation
-	updates.
-	Optimize GPU performance and
-	memory usage for real-time
-	applications.
+<h2>Overview</h2>
+<p>
+    HDWS (High Definition Water System) is a GPU-driven ocean rendering system
+    developed for Unity HDRP. The system simulates large-scale ocean behavior
+    using spectral wave techniques while maintaining real-time performance.
+</p>
+
+<h2>Responsibilities</h2>
+<ul>
+    <li>Designed and implemented a GPU-based ocean simulation using the Tessendorf FFT spectrum.</li>
+    <li>Developed custom HDRP-compatible shader passes for wave displacement, foam generation, shoreline blending, and flow map integration.</li>
+    <li>Implemented compute shaders for spectral wave generation and real-time simulation updates.</li>
+    <li>Optimized GPU memory usage and execution cost to maintain stable frame times in real-time applications.</li>
+</ul>
+
+<h2>Technical Details</h2>
+<ul>
+    <li>Fast Fourier Transform (FFT) implementation for wave spectrum evaluation.</li>
+    <li>Phillips spectrum for realistic wave distribution.</li>
+    <li>Normal reconstruction from displacement data.</li>
+    <li>HDRP integration with physically-based lighting.</li>
+</ul>
+
+<h2>Performance Considerations</h2>
+<p>
+    Focused on minimizing bandwidth usage and compute dispatch overhead while
+    preserving high visual fidelity. Careful balancing of simulation resolution
+    and performance ensured scalability across different hardware targets.
+</p>
 </section>
 
 <!-- ================= VIDEO ================= -->
@@ -110,5 +124,10 @@
     © 2026 Marcin Czekaj
 </footer>
 
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="fullImage">
+</div>
+<script src="../script.js"></script>
 </body>
 </html>

@@ -9,6 +9,10 @@
 
 <header class="project-header">
     <h1>Rootrage</h1>
+	 <p class="project-subtitle">
+    A stylized project featuring a real-time ASCII post-processing effect
+    combined with gameplay and AI systems.
+	</p>
     <a class="back-link" href="../index.html">Back to Portfolio</a>
 </header>
 
@@ -32,6 +36,29 @@
 </section>
 
 <section>
+
+	<h2>Responsibilities</h2>
+	<ul>
+		<li>Developed a post-processing shader that converts rendered pixels into ASCII characters in real time.</li>
+		<li>Implemented core gameplay mechanics.</li>
+		<li>Designed and programmed an enemy AI system that dynamically chases the player.</li>
+	</ul>
+
+	<h2>Technical Implementation</h2>
+	<ul>
+		<li>Per-pixel luminance analysis to map brightness values to ASCII character sets.</li>
+		<li>Texture-based character atlas sampling.</li>
+		<li>Custom post-process material integrated into the rendering pipeline.</li>
+	</ul>
+
+	<h2>What I Learned</h2>
+	<p>
+		Developed a deeper understanding of shader-based screen-space manipulation
+		and techniques for mapping pixel intensity values to discrete character representations.
+	</p>
+</section>
+
+<section>
     <h2>Screenshots</h2>
 
     <div class="gallery">
@@ -42,28 +69,6 @@
             <img src="../Assets/GameJam/Images/RootRage/sc1.jpg" alt="Screenshot 1">
         </div>
     </div>
-</section>
-
-<section>
-    <h2>Responsibilities</h2>
-
-	<p>
-		Developed a post-processing
-		effect that converts rendered
-		pixels into ASCII characters.
-		Implemented core gameplay
-		mechanics.
-		Designed and programmed a
-		monster system that chases the
-		player.
-	</p>
-</section>
-
-<section>
-    <h2>What I Learned</h2>
-    <p>
-		How to use shaders to properly calculate ascii letter for each pixel
-    </p>
 </section>
 
 </main>
