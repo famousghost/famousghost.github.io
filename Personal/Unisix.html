@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unisix | Marcin Czekaj</title>
+    <link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+
+<header class="project-header">
+    <h1>Unisix </h1>
+    <p class="project-subtitle">
+		A simple FPS prototype featuring stencil buffer and custom decal effect
+    </p>
+    <a class="back-link" href="../index.html">Back to Portfolio</a>
+</header>
+
+<main class="project-container">
+
+<!-- ================= OVERVIEW ================= -->
+<section>
+    <h2>Overview</h2>
+    <p>
+
+    </p>
+	
+	<div class="project-links">
+
+		<!-- GitHub Repository -->
+		<a href="https://github.com/famousghostSecondPl/Unisix"
+		   target="_blank"
+		   class="project-button">
+			<i class="fa-brands fa-github"></i>
+			Github
+		</a>
+	</div>
+
+
+    <div class="project-meta">
+        <div><strong>Type:</strong> Personal </div>
+        <div><strong>Technologies:</strong> C#, Unity built-in, Shaders</div>
+		<div><strong>Unity Version:</strong> 6000.1.13f1</div>
+    </div>
+</section>
+
+<section>
+<h2>Overview</h2>
+<p>
+    A simple FPS prototype focused on stencil buffer techniques, custom decal rendering,
+    and a lightweight physically-based shading model.
+</p>
+
+<h2>Core Features</h2>
+<ul>
+    <li>Stencil buffer-based scanner effect for revealing hidden objects, including support for transparent materials.</li>
+    <li>Custom PBR implementation within Unity’s built-in render pipeline.</li>
+    <li>Screen-space decal system implemented using post-processing shaders.</li>
+</ul>
+
+<h2>Technical Highlights</h2>
+<ul>
+    <li>Multi-pass rendering using stencil masking for selective visibility.</li>
+    <li>Custom lighting model based on simplified PBR principles.</li>
+    <li>Decal projection in screen space without modifying underlying geometry.</li>
+</ul>
+
+<section>
+    <h2>Video</h2>
+	<div class="video-container">
+	
+	<h3>Stencil Buffer & Decal System (Scanner + Caustics + Wall Projection)</h3>
+    <video controls width="100%">
+        <source src="../Assets/Personal/Videos/Unisix/StencilBufferAndDecalImplementation.mp4" type="video/mp4">
+        Stencil and decal system
+    </video>
+	
+	<h3>Custom PBR Shading</h3>
+    <video controls width="100%">
+        <source src="../Assets/Personal/Videos/Unisix/PBR_UnityTest.mp4" type="video/mp4">
+         PBR shading
+    </video>
+
+</section>
+
+</main>
+
+<footer>
+    © 2026 Marcin Czekaj
+</footer>
+
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="fullImage">
+</div>
+<script src="../script.js"></script>
+
+
+</body>
+</html>

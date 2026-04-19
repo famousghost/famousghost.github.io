@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blink Switch | Marcin Czekaj</title>
+    <link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+
+<header class="project-header">
+    <h1>Blink Switch </h1>
+    <p class="project-subtitle">
+		A simple FPS prototype featuring split-screen gameplay and multiple real-time post-processing effects
+    </p>
+    <a class="back-link" href="../index.html">Back to Portfolio</a>
+</header>
+
+<main class="project-container">
+
+<!-- ================= OVERVIEW ================= -->
+<section>
+    <h2>Overview</h2>
+    <p>
+
+    </p>
+	
+	<div class="project-links">
+
+		<!-- GitHub Repository -->
+		<a href="https://github.com/famousghostSecondPl/BlinkSwitch"
+		   target="_blank"
+		   class="project-button">
+			<i class="fa-brands fa-github"></i>
+			Github
+		</a>
+	</div>
+
+
+    <div class="project-meta">
+        <div><strong>Type:</strong> Personal </div>
+        <div><strong>Technologies:</strong> C#, Unity built-in, Shaders</div>
+		<div><strong>Unity Version:</strong> 6000.1.13f1</div>
+    </div>
+</section>
+
+<section>
+<h2>Overview</h2>
+<p>
+    A simple FPS prototype featuring split-screen gameplay and multiple real-time
+    post-processing effects. The project focuses on experimenting with screen-space
+    rendering techniques and visual stylization.
+</p>
+
+<h2>Core Features</h2>
+<ul>
+    <li>Multiple post-processing modes with runtime switching.</li>
+    <li>Cartoon-style rendering using outline detection combined with dithering.</li>
+    <li>Sketch effect based on Difference of Gaussians (DoG) and edge detection.</li>
+    <li>Old TV screen effect using UV distortion and sinusoidal noise functions.</li>
+    <li>Split-screen support using Unity's Input System with full gamepad integration.</li>
+    <li>Custom lightweight G-Buffer implementation to improve outline stability on close geometry.</li>
+    <li>Basic Temporal Anti-Aliasing (TAA) implementation to reduce visual artifacts.</li>
+</ul>
+
+
+<section>
+    <h2>Video</h2>
+	<div class="video-container">
+	
+	<h3>Split-screen effect</h3>
+    <video controls width="100%">
+        <source src="../Assets/Personal/Videos/BlinkSwitch/Blink-switch-split-screen.mp4" type="video/mp4">
+        Split-screen effect
+    </video>
+	
+	<h3>Post-process switch</h3>
+    <video controls width="100%">
+        <source src="../Assets/Personal/Videos/BlinkSwitch/Blink-switch-effects.mp4" type="video/mp4">
+        Post-process switch
+    </video>
+
+	<h3>TAA implementation</h3>
+    <video controls width="100%">
+        <source src="../Assets/Personal/Videos/BlinkSwitch/TAA.mp4" type="video/mp4">
+        TAA implementation
+    </video>
+
+</section>
+
+</main>
+
+<footer>
+    © 2026 Marcin Czekaj
+</footer>
+
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="fullImage">
+</div>
+<script src="../script.js"></script>
+
+
+</body>
+</html>
