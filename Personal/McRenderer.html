@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>McRenderer | Marcin Czekaj</title>
+    <link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+
+<header class="project-header">
+    <h1>McRenderer </h1>
+    <p class="project-subtitle">
+		Simple 3D renderer implemented using Dx12 API
+    </p>
+    <a class="back-link" href="../index.html">Back to Portfolio</a>
+</header>
+
+<main class="project-container">
+
+<!-- ================= OVERVIEW ================= -->
+<section>
+    <h2>Overview</h2>
+    <p>
+
+    </p>
+	
+	<div class="project-links">
+
+		<!-- GitHub Repository -->
+		<a href="#"
+		   target="_blank"
+		   class="project-button">
+			<i class="fa-brands fa-github"></i>
+			Github
+		</a>
+	</div>
+
+
+    <div class="project-meta">
+        <div><strong>Type:</strong> Personal </div>
+        <div><strong>Technologies:</strong> C++, Dx12, Shaders</div>
+    </div>
+</section>
+
+<section>
+<h2>Overview</h2>
+<p> A simple 3D renderer built using the DirectX 12 API. This project is a work in progress and serves as a personal playground for exploring modern real-time rendering techniques and low-level graphics programming. </p>
+
+<h2>Core Features</h2>
+<ul> 
+<li>Implemented a basic deferred rendering pipeline</li>
+<li>Implemented a basic screen-space ambient occlusion (SSAO) technique</li>
+<li>Implemented a simple FXAA anti-aliasing technique</li> 
+</ul>
+
+<h2>Work in Progress</h2>
+<p> This project is actively evolving. I plan to update this page from time to time as new rendering features, improvements, and experiments are added to the renderer. </p>
+<section>
+    <h2>Video</h2>
+	<div class="video-container">
+	
+	<h3>Simple renderer visuals</h3>
+    <video controls width="100%">
+        <source src="../Assets/Personal/Videos/McRenderer/SimpleRenderer.mp4" type="video/mp4">
+        Stencil and decal system
+    </video>
+
+</section>
+
+    <h2>Screenshots</h2>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="../Assets/Personal/Images/McRenderer/AlbedoBuffer.jpg" alt="Screenshot 1">
+        </div>
+		<div class="gallery-item">
+            <img src="../Assets/Personal/Images/McRenderer/NormalBuffer.jpg" alt="Screenshot 2">
+        </div>
+		<div class="gallery-item">
+            <img src="../Assets/Personal/Images/McRenderer/ReverseZBuffer.jpg" alt="Screenshot 3">
+        </div>
+		<div class="gallery-item">
+            <img src="../Assets/Personal/Images/McRenderer/ShadowMap.jpg" alt="Screenshot 4">
+        </div>
+		<div class="gallery-item">
+            <img src="../Assets/Personal/Images/McRenderer/SSAO.jpg" alt="Screenshot 5">
+        </div>
+		<div class="gallery-item">
+            <img src="../Assets/Personal/Images/McRenderer/RendererImage.jpg" alt="Screenshot 6">
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    © 2026 Marcin Czekaj
+</footer>
+
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="fullImage">
+</div>
+<script src="../script.js"></script>
+
+
+</body>
+</html>
