@@ -161,6 +161,49 @@
 
 </section>
 
+<h2>Update 13.10.2026</h2>
+<ul> 
+<li>Fixed crashes in Release builds by eliminating unnecessary render texture copies.</li>
+<li>Fixed the SSAO algorithm by calculating the TBN matrix to transform random offset vectors into world space instead of tangent space.</li>
+<li>Fixed normal map calculations by removing an unnecessary transpose, since the matrix multiplication mul(vec, TBN) already uses the transposed convention compared to mul(TBN, vec).</li>
+<li>Added first solution for generating contact shadows</li>
+</ul>
+
+<section>
+    <h2>Screenshots</h2>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="../Assets/Personal/Images/McRenderer/SSAO/SSAO_FIX1.jpg" alt="SSAO FIX 1">
+        </div>
+		<div class="gallery-item">
+            <img src="../Assets/Personal/Images/McRenderer/SSAO/SSAO_FIX2.jpg" alt="SSAO FIX 2">
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Video</h2>
+	<div class="video-container">
+	
+	<h3>Renderer: SSAO, Contact Shadows, PBR and fixed normal map</h3>
+    <video controls width="100%">
+        <source src="../Assets/Personal/Videos/McRenderer/SSAO/SSAO_PBR_ContactShadows.mp4" type="video/mp4">
+        Renderer: SSAO, Contact Shadows, PBR and fixed normal map
+    </video>
+	
+	<h3>Renderer: Rotation with proper world space normal map</h3>
+    <video controls width="100%">
+        <source src="../Assets/Personal/Videos/McRenderer/SSAO/RotateRenderer.mp4" type="video/mp4">
+        Renderer: Rotation with proper world space normal map
+    </video>
+	
+	RotateRenderer.mp4
+
+</section>
+
+</main>
+
 </main>
 
 <footer>
